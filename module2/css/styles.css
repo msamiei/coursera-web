@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper{
+	width:96%;
+	font-family:cursive;
+    margin-right: auto;
+    margin-left: auto;
+	font-size: 100%;
+	color:rgb(61, 61, 61);
+}
+
+h1{
+	text-align:center;
+	margin: 30px;
+	font-size: 1.75em;
+}
+section{
+	background-color: silver;
+	border: 2px solid midnightblue;
+	margin-bottom: 15px;
+	float: left;
+}
+
+h3{
+	text-align: center;
+	border-left: 2px solid rgb(61, 61, 61);
+	border-bottom: 2px solid rgb(61, 61, 61);
+	width:170px;
+	float: right;
+	font-size: 1.25em;
+}
+
+p{
+	padding: 15px;
+	clear: right;
+}
+
+#coffee{
+	background-color:lightpink;
+}
+
+#tea{
+	background-color: crimson;
+	color:gainsboro;
+}
+
+#water{
+	background-color: gainsboro;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	section{
+		width:32%;
+	}
+	#tea_section, #water_section{
+		margin-left:2%;
+	}
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#coffee_section, #tea_section{
+		width: 49%;
+	}
+	#tea_section{
+		margin-left:2%;
+	}
+	#water_section{
+		width:100%;
+	}
+}
+
+/********** Small devices only **********/
+@media  (max-width: 767px) {
+	#wrapper{
+		width:90%;
+	}
+	section{
+		width: 100%;
+		float: none;
+	}
+}
