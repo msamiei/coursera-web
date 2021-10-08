@@ -29,14 +29,21 @@ body {
     text-decoration: none;
   }
   #collapsable-nav{
-     
+      padding:0;
+      
   }
+  
   #nav-list {
-    margin-top: 10px;
+    margin:0;
+    background-color: ghostwhite;
+   
   }
   #nav-list a {
     color: black;
     text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    
   }
   #nav-list a:hover {
     background: #E7E7E7;
@@ -46,7 +53,7 @@ body {
   }
   
   .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid gray;
+    border: 1px solid black;
   }
 
   /* END HEADER */
@@ -70,3 +77,4 @@ body {
     line-height:1.5em;
     padding:20px;
   }
+  /* END HOME PAGE */
